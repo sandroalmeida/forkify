@@ -1,0 +1,25 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "forkify project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandroalmeida/forkify.git"
+  },
+  "author": "Sandro Almeida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandroalmeida/forkify/issues"
+  },
+  "homepage": "https://github.com/sandroalmeida/forkify#readme",
+  "devDependencies": {
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {}
+}
