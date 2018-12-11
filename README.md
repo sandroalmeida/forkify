@@ -1,5 +1,5 @@
 Vanilla JavaScript Application
-Funcionality (Search and Show Recipes)
+Functionality (Search and Show Recipes)
 
 Built using Javascript ES6 and JS2015, HMTL5 and CSS
 
