@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { key } from '../config';
 
 export default class Search {
     constructor(query) {
@@ -6,12 +7,17 @@ export default class Search {
     }
     
     async getResults() {
-
-        const key = '676fe48261b6f3e4141d21115cb984bf';
-    
+        
         try{
             const res = await axios(`https://www.food2fork.com/api/search?key=${key}&q=${this.query}`);
-            this.result = res.data.recipes;
+            const limit = res.data.error;
+            
+            if(limit){
+                throw new Error('Limit exceed!!!');
+            } else{
+                this.result = res.data.recipes;
+            }
+            
         } catch(error) {
             alert(error);
         }
