@@ -13,13 +13,14 @@ export default class Search {
             const limit = res.data.error;
             
             if(limit){
-                throw new Error('Limit exceed!!!');
+                throw new Error('Limit exceed in API!!!');
             } else{
                 this.result = res.data.recipes;
             }
             
         } catch(error) {
-            alert(error);
+            console.log(error);
+            alert('Error getResults() !!!! :(');
         }
     }
 }
